@@ -20,9 +20,10 @@
         <h1>Hello World!</h1>
         <!-- JavaScript code -->
         <script>
-            window.alert("My first message!");
-            window.confirm("Do you really like JavaScript?");
-            window.prompt("Whats your name");
+            var numberOne = Number.parseInt(window.prompt("Whats your first number: "));
+            var numberTwo = Number.parseInt(window.prompt("Whats your second number: "));
+            var sum = numberOne + numberTwo;
+            window.alert('the sum of the numbers is: '+ sum);
         </script>
     </body>
 </html>
