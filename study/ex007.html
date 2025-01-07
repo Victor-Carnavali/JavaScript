@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sum numbers</title>
+        <style>
+            body {
+                font: normal 15pt JetBrains Mono;
+            }
+            div {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sum numbers</h1>
+        <input type="number" name="txtNumberOne" id="txtNumberOne" /> +
+        <input type="number" name="txtNumberTwo" id="txtNumberTwo" />
+        <input type="button" value="sum" onclick="sum()" />
+        <div>Result</div>
+
+        <!-- JavaScript Code -->
+        <script>
+            function sum() {
+                var result = window.document.querySelector("div");
+                var getNumberOne =
+                    window.document.getElementById("txtNumberOne");
+                var getNumberTwo =
+                    window.document.getElementById("txtNumberTwo");
+
+                var numberOne = Number(getNumberOne.value);
+                var numberTwo = Number(getNumberTwo.value);
+
+                var sum = numberOne + numberTwo;
+                result.innerText = sum;
+            }
+        </script>
+    </body>
+</html>
