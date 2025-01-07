@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM Events</title>
+        <style>
+            div#area {
+                font: normal 15pt JetBrains Mono;
+                background-color: rgb(157, 115, 191);
+                color: rgb(255, 255, 255);
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="area">Interact...</div>
+
+        <!-- JavaScript Code -->
+        <script>
+            var area = window.document.getElementById("area");
+
+            area.addEventListener("click", click);
+            area.addEventListener("mouseenter", inside);
+            area.addEventListener("mouseout", out);
+
+            function click() {
+                area.style.background = "blue";
+            }
+
+            function inside() {
+                area.innerText = "inside";
+                area.style.background = "yellow";
+            }
+
+            function out() {
+                area.innerText = "out";
+                area.style.background = "rgb(157,115,191)";
+            }
+        </script>
+    </body>
+</html>
