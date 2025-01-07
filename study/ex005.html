@@ -16,9 +16,16 @@
     <h1>Starting studies with DOM</h1>
     <p>Here is the result</p>
     <p>Learning how to use <strong>DOM</strong> in JavaScript</p>
-    <div>Clique here!</div>
-    <script>
+    <div id="msg">Clique here!</div>
 
+    <!-- JavaScript Code -->
+    <script>
+        var pOne = window.document.getElementsByTagName('p')[0];
+        pOne.style.color = 'black';
+        // var d = window.document.getElementById('msg');
+        //window.document.getElementById('msg').innerText = 'hello';
+        var d = window.document.querySelector('div#msg');
+        d.style.color = 'blue';
     </script>
 </body>
 </html>
