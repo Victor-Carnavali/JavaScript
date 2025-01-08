@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Car Verify</title>
+    </head>
+    <body>
+        <h1>System Car Fine</h1>
+        <p>
+            Car velocity
+            <input type="number" name="txtVel" id="txtVel" /> Mph (miles per
+            hour) <input type="button" value="Check" onclick="check()" />
+        </p>
+        <div id="result">
+            Checking your velocity...
+        </div>
+
+        <script>
+            function check() {
+                var txtVel = window.document.getElementById('txtVel');
+                var vel = Number(txtVel.value);
+                var result = window.document.getElementById('result');
+
+                result.innerHTML = `<p>Your actualy velocity is: <strong>${new Intl.NumberFormat("en-US", {style: "unit", unit: "mile-per-hour"}).format(vel)}</strong></p>`;
+                    if (vel > 60) {
+                        result.innerHTML = `You exceeded the driving limit`;
+                    }
+                    else {
+                        result.innerHTML = `You are below the speed limit :D`;
+                    };
+                result.innerHTML += `<p>Drive safety</p>`;
+            };
+        </script>
+    </body>
+</html>
