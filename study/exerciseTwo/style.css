@@ -1,0 +1,64 @@
+body {
+    font-family:JetBrains Mono;
+    background-color: rgb(224, 224, 252);
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    background-color: white;
+    width: 600px;
+    margin: auto;
+}
+
+select#flist {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div#principal {
+    padding: 10px;
+}
+
+input#btnSubmit {
+    width: 100px;
+    height: 25px;
+    font: normal 15px Arial;
+    background-color: rgb(18, 112, 253);
+    border-radius: 5px;
+    color: white;
+    transition: all 0.4s;
+    border: none;
+}
+
+input#btnSubmit:hover {
+    background-color: rgb(77, 138, 228);
+    transform: scale(1.1);
+}
+
+input#btnAdd {
+    width: 60px;
+    height: 25px;
+    font: normal 12px Arial;
+    background-color: rgb(18, 112, 253);
+    border-radius: 5px;
+    color: white;
+    transition: all 0.4s;
+    border: none;
+}
+
+input#btnAdd:hover {
+    background-color: rgb(77, 138, 228);
+    transform: scale(1.1);
+}
+
+footer {
+    margin: auto;
+    width: 600px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
