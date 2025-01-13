@@ -1,5 +1,3 @@
-console.log('will start');
-for (var c = 1; c <= 5; c++) {
-    console.log(c);
-}
-console.log('end');
+let num = [5,8,2,9,3];
+num.push(7);
+console.log(num.sort());
