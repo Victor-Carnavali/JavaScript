@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(231, 231, 255);
+    display: flex; /* Define o layout do body como flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+    margin: 0; /* Remove margens padrão */
+    font-family: JetBrains Mono;
+}
+
+section { 
+    display: flex; /* Define o layout da seção como flexbox */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    margin: auto;
+    width: 400px;
+    background-color: white;
+    padding: 20px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Deixa as bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destacar a seção */
+}
+
+form {
+    margin: 10px;
+    width: 100%; /* Ajusta o formulário para ocupar toda a largura da seção */
+    display: flex; /* Define o layout do formulário como flexbox */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+button {
+    width: 90px;
+    background-color: rgb(0, 81, 255);
+    color: white;
+    border: none;
+    margin: 10px;
+    cursor: pointer; /* Adiciona um cursor de mão para interatividade */
+    padding: 6px; /* Adiciona espaçamento interno */
+    border-radius: 5px; /* Deixa as bordas arredondadas */
+    transition: 0.4s; /* Adiciona transição suave */
+}
+
+button:hover {
+    background-color: rgb(35, 130, 255); /* Altera a cor ao passar o mouse */
+    transform: scale(1.1);
+}
