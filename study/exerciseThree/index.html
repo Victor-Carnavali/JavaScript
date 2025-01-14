@@ -14,9 +14,9 @@
         </form>
         <form>
             <label>Age</label>
-            <input type="text" name="formAge" id="formAge" value="">
+            <input inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')" id="formAge">
         </form>
-        <button type="button">Add</button>
+        <button type="button" id="btnAdd">Add</button>
         <div class="res"></div>
     </section>
     

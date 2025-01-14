@@ -45,3 +45,17 @@ button:hover {
     background-color: rgb(35, 130, 255); /* Altera a cor ao passar o mouse */
     transform: scale(1.1);
 }
+
+.person {
+    margin: 10px;
+    font: normal 15px JetBrains Mono;
+    border: 1px rgb(35, 130, 255) solid;
+    border-radius: 5px;
+    width: 200px;
+    padding: 5px;
+    transition: 0.4s;
+}
+
+.person:hover {
+    transform: scale(1.1);
+}
