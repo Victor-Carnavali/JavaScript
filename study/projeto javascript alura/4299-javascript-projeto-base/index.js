@@ -1,23 +1,13 @@
-import { criarItemDaLista } from "./scripts/criarItemDaLista";
-
+import { criarItemDaLista } from "./scripts/criarItemDaLista.js";
+import verificarListaVazia from "./scripts/verificarListaVazia.js";
 const listaDeCompras = document.getElementById("lista-de-compras");
 const botaoAdicionar = document.getElementById("adicionar-item");
-let contador = 0;
 
 botaoAdicionar.addEventListener("click", (evento) => {
+    evento.preventDefault();
     const itemDaLista = criarItemDaLista();
     listaDeCompras.appendChild(itemDaLista);
-    verificarListaVazia();
+    verificarListaVazia(listaDeCompras);
 });
 
-const mensagemListaVazia = document.querySelector(".mensagem-lista-vazia");
-function verificarListaVazia() {
-    const itensDaLista = listaDeCompras.querySelectorAll("li");
-    if (itensDaLista.length === 0) {
-        mensagemListaVazia.style.display = "block";
-    } else {
-        mensagemListaVazia.style.display = "none";
-    }
-}
-
-verificarListaVazia();
+verificarListaVazia(listaDeCompras);
